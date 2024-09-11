@@ -1,4 +1,46 @@
 * {
     margin: 0%;
     padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", system-ui;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold-italic {
+    font-family: "Libre Baskerville", system-ui;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+.container {
+height: 100vh;
+background-image: url(./assets/paper.JPG);
+}
+
+.poloroid {
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px black;
+    height: 100px;
+    width: 75px;
+    transform: rotate(32deg);
+}
+
+.picture img{
+    padding-top: 5px;
+    height: 75px;
+    width:66px;
 }
