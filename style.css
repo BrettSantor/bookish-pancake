@@ -4,6 +4,12 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+html {
+    background-image: url(./assets/paper.JPG);
+background-color: rgb(255, 255, 255, .6);
+background-blend-mode: lighten;
+}
+
 .libre-baskerville-regular {
     font-family: "Libre Baskerville", system-ui;
     font-weight: 400;
@@ -25,12 +31,14 @@
 
 .container {
 height: 100vh;
-background-image: url(./assets/paper.JPG);
+min-height: 100%;
+/* background-image: url(./assets/paper.JPG);
 background-color: rgb(255, 255, 255, .6);
-background-blend-mode: lighten;
+background-blend-mode: lighten; */
 }
 
 .hero {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(5, 1fr);
@@ -73,4 +81,38 @@ background-blend-mode: lighten;
     padding-top: 5px;
     height: 225px;
     width: 198px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.skills > .header {
+    grid-row: 1/ 2;
+}
+
+.skills > .subheader {
+    grid-row: 2 / 3;
+}
+
+.web {
+    grid-column: 2 /3;
+    grid-row: 3 / 4;
+}
+
+.music {
+    grid-column: 2 /3;
+    grid-row: 4 / 5;
+}
+
+.craft {
+    grid-column: 2 /3;
+    grid-row: 5 / 6;
+}
+
+.list > h4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
